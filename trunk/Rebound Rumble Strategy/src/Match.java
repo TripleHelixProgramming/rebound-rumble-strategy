@@ -49,6 +49,19 @@ public class Match
 		return output;
 	}
 	
+	public String toString(String delim)
+	{
+		String output = matchNum + delim + teamNum + delim + hHoop1 + delim + hHoop2 + delim + hHoop3 + delim
+								 + tHoop1 + delim + tHoop2 + delim + tHoop3 + delim + Boolean.toString(balance) + delim + device;
+		return output;
+	}
+	
+	public String[] getDataArray()
+	{
+		String[] output = {Integer.toString(matchNum), Integer.toString(teamNum), Integer.toString(hHoop1), Integer.toString(hHoop2), Integer.toString(hHoop3), Integer.toString(tHoop1), Integer.toString(tHoop2), Integer.toString(tHoop3), Boolean.toString(balance), device};
+		return output;
+	}
+	
 	public String getDevice()
 	{
 		return device;
