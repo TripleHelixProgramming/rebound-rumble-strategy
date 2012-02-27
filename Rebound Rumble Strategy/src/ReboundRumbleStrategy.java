@@ -11,7 +11,6 @@ public class ReboundRumbleStrategy
 		accessScoreFile = new AccessScoreFile();
 		
 		strategySystem = new StrategySystem(accessScoreFile.getScoreFile());
-		
 	}
 
 }
